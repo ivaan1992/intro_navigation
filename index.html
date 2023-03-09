@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <title>Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+<body class="body">
+  <div class="content">
+      <nav class="navbar d-flex desktop-nav">
+        <div class="left d-flex">
+          <div class="links d-flex">
+            <img src="./images/logo.svg" alt="logo">
+            <ul class="left-links d-flex">
+              <li class="feature-menu-link">features<img src="/images/icon-arrow-down.svg" class="arrow-down-feat" alt="arrow-down"><img src="/images/icon-arrow-up.svg" class="inactive arrow-up-feat" alt="arrow-up"></li>
+              <li class="company-menu-link">company<img src="/images/icon-arrow-down.svg" class="arrow-down-comp" alt="arrow-down"><img src="/images/icon-arrow-up.svg" class="inactive arrow-up-comp" alt="arrow-up"></li>
+              <li>careers</li>
+              <li>about</li>
+            </ul>
+          </div>
+        </div>
+        <div class="right d-flex">
+          <figure class="mobile-icons hide">
+            <img src="/images/icon-menu.svg" alt="menu-icon">
+            <img src="/images/icon-close-menu.svg" alt="menu-icon">
+          </figure>
+          <ul class="d-flex right-links">
+            <li>login</li>
+            <li>register</li>
+          </ul>
+        </div>
+      </nav>
+      <div class="extra-menus d-flex">
+        <ul class="features-menu inactive">
+          <li><img src="/images/icon-todo.svg" alt="icon">todo list</li>
+          <li><img src="/images/icon-calendar.svg" alt="icon">calendar</li>
+          <li><img src="/images/icon-reminders.svg" alt="icon">reminders</li>
+          <li><img src="/images/icon-planning.svg" alt="icon">planning</li>
+        </ul>
+        <ul class="company-menu inactive">
+          <li>history</li>
+          <li>our team</li>
+          <li>blog</li>
+        </ul>
+      </div>
+      <nav class="navbar mobile-nav">
+          <img src="./images/logo.svg" alt="logo">
+          <img id="hamburger-mob" src="/images/icon-menu.svg" alt="menu-icon">
+      </nav>
+      <div class="nav-menu-mobile hide">
+        <ul class="nav-mobile">
+          <div class="close">
+            <img src="./images/icon-close-menu.svg" alt="icon-close-menu" class="close-mobile-menu">
+          </div>
+            <li class="feature-menu-mob">features<img src="/images/icon-arrow-down.svg" class="arrow-down-feat-mob" alt="arrow-down-feat"><img src="/images/icon-arrow-up.svg" class="arrow-up-feat-mob inactive" alt="arrow-down-feat"></li>
+              <ul class="features-menu-mob inactive">
+                <li><img src="/images/icon-todo.svg" alt="icon">todo list</li>
+                <li><img src="/images/icon-calendar.svg" alt="icon">calendar</li>
+                <li><img src="/images/icon-reminders.svg" alt="icon">reminders</li>
+                <li><img src="/images/icon-planning.svg" alt="icon">planning</li>
+              </ul>
+            <li class="company-menu-mob">company<img src="/images/icon-arrow-down.svg" class="arrow-down-comp-mob" alt="arrow-down-comp"><img src="/images/icon-arrow-up.svg" class="arrow-up-comp-mob inactive" alt="arrow-down-feat"></li>
+              <ul class="companies-menu-mob inactive">
+                <li>history</li>
+                <li>our team</li>
+                <li>blog</li>
+              </ul>
+            <li>careers</li>
+            <li>about</li>
+            <ul class="d-flex">
+              <li>login</li>
+              <li>register</li>
+            </ul>
+        </ul>
+      </div>
+      <main class="main-content">
+        <section class="main-section">
+          <article class="main-article d-flex">
+            <div class="article-text d-flex">
+              <h1>Make remote work</h1>
+              <p>Get your team in sync, no matter your location. Streamline processes, 
+                create team rituals, and watch productivity soar.</p>
+              <button class="learn-more">Learn more</button>
+              <figure class="clients d-flex">
+                <img src="/images/client-databiz.svg" alt="client">
+                <img src="/images/client-audiophile.svg" alt="client">
+                <img src="/images/client-meet.svg" alt="client">
+                <img src="/images/client-maker.svg" alt="client">
+              </figure>
+            </div>
+            <div class="article-image d-flex">
+              <picture>
+                <source media="(max-width: 820px )" srcset="/images/image-hero-mobile.png">
+                <img src="/images/image-hero-desktop.png" alt="main-image">
+              </picture>
+            </div>
+          </article>
+        </section>
+      </main>
+  </div>
+  <script src="./main.js" type="module"></script>
+  <!-- 
+  Features
+  Company
+  Careers
+  About
+
+  Login
+  Register
+
+  Make remote work
+
+  Get your team in sync, no matter your location. Streamline processes, 
+  create team rituals, and watch productivity soar.
+
+  Learn more
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
